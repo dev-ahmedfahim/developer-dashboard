@@ -22,6 +22,10 @@ function changeText(id, value) {
   document.getElementById(id).innerText = value;
 }
 
+document.getElementById("discover-btn").addEventListener("click", function () {
+  window.location.href = "./new.html";
+});
+
 // Added Date
 const date = new Date();
 const options = {

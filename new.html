@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-blue-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QNA - Page</title>
+
+    <!-- DaisyUi & Tailwind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="font-poppins">
+    <header
+      class="max-w-screen-2xl mx-auto mt-5 bg-white rounded-2xl py-5 px-6"
+    >
+      <nav class="flex items-center justify-between">
+        <div class="flex items-center">
+          <img src="assets/logo.png" alt="" />
+          <h2 class="text-4xl ml-2">
+            Dev<span class="font-semibold text-[#00303C]">Board</span>
+          </h2>
+        </div>
+
+        <button
+          id="back-btn"
+          class="btn rounded-lg btn-primary py-7 px-9 text-2xl font-bold"
+        >
+          Back to Desk
+        </button>
+      </nav>
+    </header>
+
+    <main class="max-w-screen-2xl mx-auto">
+      <h3 class="text-center text-3xl font-bold mt-5 mb-[60px]">Blogs</h3>
+
+      <!-- Cards Container -->
+      <div>
+        <!-- Card 1 -->
+        <div class="card w-full bg-base-100 mt-8">
+          <div class="card-body">
+            <h2 class="card-title text-2xl">
+              Question-1: What are the different ways to select an element in
+              the DOM?
+            </h2>
+            <hr class="border-dashed border-gray-200 my-2" />
+            <p class="text-xl text-gray-500">
+              There are different kinds of ways to select an element in the DOM.
+              Such as getElementById(), getElementByClassName(),
+              querySelector(), querySelectorAll().
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card w-full bg-base-100 mt-8">
+          <div class="card-body">
+            <h2 class="card-title text-2xl">
+              Question-2: What is the difference between innerHTML, innerText,
+              and textContent ?
+            </h2>
+            <hr class="border-dashed border-gray-200 my-2" />
+            <p class="text-xl text-gray-500">
+              The difference between innerHTML, innerText, and textContent is
+              "innerHtml" means all the html tags inside that element on the
+              other hand innerText means only the texts inside the element and
+              at last textContent means is a element which is type of container
+              or box which contains texts.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card w-full bg-base-100 mt-8">
+          <div class="card-body">
+            <h2 class="card-title text-2xl">
+              Question-3: What is event delegation in the DOM?
+            </h2>
+            <hr class="border-dashed border-gray-200 my-2" />
+            <p class="text-xl text-gray-500">
+              "event delegation" in the DOM is a way or technique where if we
+              want to do something with the child elements or we wants something
+              to happen if we click on them we dont need to add
+              addEventListener() to every one of them we just target the parent
+              element or the parent container and add the addEventListener() on
+              them.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card w-full bg-base-100 mt-8">
+          <div class="card-body">
+            <h2 class="card-title text-2xl">
+              Question-4: What is event bubbling in the DOM?
+            </h2>
+            <hr class="border-dashed border-gray-200 my-2" />
+            <p class="text-xl text-gray-500">
+              Event Bubling is a built in property in JavaScript. It starts when
+              a event starts and goes all along to its parent element by
+              bubling.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card w-full bg-base-100 mt-8">
+          <div class="card-body">
+            <h2 class="card-title text-2xl">
+              Question-5: How do you create, add, and remove elements using
+              JavaScript?
+            </h2>
+            <hr class="border-dashed border-gray-200 my-2" />
+            <p class="text-xl text-gray-500">
+              First of all To create a element by JavaScript we have to use
+              .createElement() method. On the other hand to add an element we
+              use .appendChild() method. At last to remove any element there is
+              two way to remove one .remove to remove the element permanently
+              and the other classList.remove() which just removes the class name
+              of the element.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts/new.js"></script>
+  </body>
+</html>
