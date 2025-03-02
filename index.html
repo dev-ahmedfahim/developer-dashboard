@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-poppins bg-blue-100 h-screen w-screen" id="page-body">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,9 +27,9 @@
       }
     </style>
   </head>
-  <body class="font-poppins">
+  <body class="" >
     <header
-      class="max-w-screen-2xl mx-auto mt-5 bg-white rounded-2xl py-5 px-6"
+      class="max-w-screen-2xl mx-auto mt-5  bg-white rounded-2xl py-5 px-6"
     >
       <nav class="flex items-center justify-between">
         <div class="flex items-center">
@@ -76,7 +76,7 @@
               <input type="checkbox" name="" id="cheak-box" class="h-6 w-6 rounded-2xl accent-[#3752FD]" checked>
             </div>
             <div>
-              <p>Task Assigned </p>
+              <p>Task Assigned</p>
               <h3 id="tasks-number" class="text-2xl font-bold text-[#00303C]">6</h3>
             </div>
           </div>
@@ -265,8 +265,29 @@
         </div>
       </div>
 
+      <!-- Div 2 For Activity -->
+      <div id="activity-container" class="w-1/5 bg-white py-6 px-4 rounded-2xl">
+        <!-- Activity History -->
+        <div class="flex items-center justify-center">
+          <img src="assets/activity.png" alt="Activity Image">
+          <h2 class="font-bold ml-2 text-xl text-[#00303C]">Activity Log</h2>
+        </div>
+
+        <!-- Activity Button -->
+        <div class="flex justify-center mt-4">
+          <button id="clear-btn" class="btn bg-[#3752FD] text-white rounded-lg">Clear History</button>
+        </div>
+
+        <hr class="border-dashed border-gray-300 mt-5">
+
+        <!-- History Box -->
+        <div id="history-box" class="beep-msz"></div>
+      </div>
+    </div
+
     </main>
 
+    
     <script src="Scripts/script.js"></script>
     
   </body>
